@@ -3,50 +3,121 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Gabrielle Diaz, a biomedical engineering master’s student at New York University seeking a summer internship in medical device design and R&D.">
+<meta name="description" content="Gabrielle Diaz, an NYU biomedical engineering master’s student seeking a summer internship in medical device design and R&D.">
 <title>Gabrielle Diaz | Biomedical Engineering</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="navigation.js" defer></script>
 </head>
-<body id="top">
+<body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="#top"><span class="monogram" aria-hidden="true">GD</span> Gabrielle Diaz</a>
-<nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#experience">Experience</a><a class="nav-cta" href="#internships">Internships <span aria-hidden="true">↗</span></a></nav>
-</div></header>
-<main id="main">
-<section class="hero wrap" aria-labelledby="name">
-<div class="intro">
-<p class="eyebrow"><span class="rule"></span> Biomedical Engineering · NYU</p>
-<h1 id="name">Gabrielle <em>Diaz</em></h1>
-<p class="intro-copy">I’m a master’s student in biomedical engineering at New York University, interested in designing and developing medical devices that address real needs in healthcare.</p>
-<div class="hero-actions"><a class="button" href="#projects">Explore projects <span aria-hidden="true">↓</span></a><a class="text-link" href="#experience">View experience <span aria-hidden="true">↗</span></a></div>
-<p class="status"><span aria-hidden="true"></span> Seeking a summer internship in medical device design or R&amp;D</p>
-</div>
-<figure class="hero-figure">
-<img src="device.jpg" width="1024" height="1024" alt="Concept rendering of a lavender wearable sensor with a woven strap" fetchpriority="high">
-<figcaption>Illustrative wearable device concept</figcaption>
-</figure>
-</section>
-<section class="section project-section" id="projects">
-<div class="wrap">
-<p class="eyebrow"><span class="rule"></span> Engineering interests</p>
-<h2>Projects</h2>
-<p class="section-copy">Two project directions I’m interested in exploring through graduate study and an internship.</p>
-<div class="project-grid">
-<article class="project"><p class="eyebrow">Medical device design</p><h3>Wearable motion sensing</h3><p>How could a wearable sensor help patients and clinicians track movement during rehabilitation?</p><details><summary>Design questions</summary><p>Consider where the sensor sits, how users put it on, and what movement data would help a clinician evaluate progress.</p></details></article>
-<article class="project"><p class="eyebrow">Research &amp; development</p><h3>Prototype evaluation</h3><p>How can repeatable bench tests help a design team decide what to change in the next prototype?</p><details><summary>Research questions</summary><p>Identify what the prototype needs to do, choose measurable criteria, and document how its performance changes between iterations.</p></details></article>
-</div>
-</div>
-</section>
-<section class="section wrap experience" id="experience">
-<div><p class="eyebrow"><span class="rule"></span> Education</p><h2>Experience</h2></div>
-<article class="education"><p class="eyebrow">Graduate study · In progress</p><h3>New York University</h3><p>Master’s student in Biomedical Engineering</p><p class="location">New York, NY</p></article>
-</section>
-<section id="internships" class="internships"><div class="wrap internship-inner"><p class="eyebrow"><span class="rule"></span> Internship search</p><h2>Summer opportunities</h2><p>I’m looking for a summer internship where I can contribute to medical device design, research, or development. I’m especially interested in teams that turn clinical needs into prototypes and use testing to improve them.</p></div></section>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#home"><span class="monogram" aria-hidden="true">GD</span> Gabrielle Diaz</a>
+    <nav aria-label="Portfolio navigation">
+      <a href="#home" aria-current="page">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#involvement">Involvements &amp; Achievements</a>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section id="home" class="page wrap" aria-labelledby="name">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Biomedical Engineering · New York University</p>
+        <h1 id="name">Gabrielle <em>Diaz</em></h1>
+        <p class="intro-copy">I’m an NYU biomedical engineering master’s student with a background in biomechanics, prosthetics research, and direct patient care. My projects span surgical navigation, rehabilitation robotics, and accessible technology.</p>
+        <p class="status">Seeking a summer internship in medical device design or R&amp;D</p>
+        <div class="actions">
+          <a class="button" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/gabrielle-diaz-2136762b">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="device.jpg" width="1024" height="1024" alt="Illustration of a wearable sensor with a woven strap" fetchpriority="high">
+        <figcaption>Illustrative wearable device concept</figcaption>
+      </figure>
+    </div>
+    <div class="home-details">
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <div class="degree"><strong>New York University</strong><p>Master’s in Biomedical Engineering · Expected December 2027</p></div>
+        <div class="degree"><strong>University of Nebraska at Omaha</strong><p>BA in Biomechanics, minor in Mathematics · December 2025</p></div>
+      </section>
+      <section aria-labelledby="skills">
+        <h2 id="skills">Technical skills</h2>
+        <ul class="tags"><li>Fusion 360</li><li>Tinkercad</li><li>MATLAB</li><li>Simulink</li><li>Arduino</li><li>3D printing</li></ul>
+      </section>
+    </div>
+  </section>
+
+  <section id="projects" class="page wrap" aria-labelledby="projects-title">
+    <header class="page-heading"><p class="eyebrow">Research &amp; device design</p><h2 id="projects-title">Projects</h2></header>
+    <div class="project-grid">
+      <article class="card feature">
+        <p class="eyebrow">Capstone · Aug 2024 – May 2025</p>
+        <h3>Real-time angle measurement for femoral osteotomy</h3>
+        <p>I developed a wireless, IMU-based surgical navigation prototype using an ESP32-S2 to measure femoral rotation in real time. I designed the enclosure and K-wire attachment with mechanical stability and sterile sleeve deployment in mind.</p>
+        <ul class="tags"><li>Surgical navigation</li><li>IMU</li><li>3D printing</li></ul>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Research · Sep 2026 – Present</p>
+        <h3>Accessible technology with Helen Keller Services</h3>
+        <p>Through NYU’s Vertically Integrated Projects program, I study accessibility barriers and explore how extended reality, spatial computing, and multimodal interfaces could support people who are blind or have low vision.</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Robotics · Jan – May 2026</p>
+        <h3>Hand rehabilitation robotics</h3>
+        <p>I developed a motorized hand rehabilitation system using MATLAB, Simulink, and an Omni Haptic Device. I tracked stylus motion in real time and integrated EMG sensors to measure muscle activity for feedback and device control.</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Implant design · Jan – May 2026</p>
+        <h3>Hip replacement implant concept</h3>
+        <p>I modeled a hip implant concept in Fusion 360 and evaluated load distribution, anatomical fit, and joint stability.</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Applied biomechanics · Jan – May 2026</p>
+        <h3>Blunt head trauma protection device</h3>
+        <p>I used biomechanics principles to analyze impact forces and model a protective device prototype in Fusion 360.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" class="page wrap" aria-labelledby="experience-title">
+    <header class="page-heading"><p class="eyebrow">Research &amp; patient care</p><h2 id="experience-title">Experience</h2></header>
+    <div class="entries">
+      <article class="entry"><p class="meta">Jul – Aug 2026<span>New York, NY</span></p><div><h3>Digital Health Research Intern</h3><p class="organization">HITLAB</p><p>Supported digital health research, including an IRB-approved Alzheimer’s EEG study. I contacted up to 50 neurology clinics and tracked responses to identify potential research partners.</p></div></article>
+      <article class="entry"><p class="meta">Feb – Aug 2026<span>Scarsdale, NY</span></p><div><h3>Dental Assistant</h3><p class="organization">Westchester Root Canals</p><p>Assisted chairside during exams and procedures, sterilized instruments, and prepared treatment rooms.</p></div></article>
+      <article class="entry"><p class="meta">Mar – Dec 2025<span>Omaha, NE</span></p><div><h3>Nursing Assistant</h3><p class="organization">Nebraska Methodist Hospital</p><p>Provided direct care in orthopedics and neurology under RN supervision, helping patients with mobility, daily activities, and rehabilitation and recording vital signs.</p></div></article>
+      <article class="entry"><p class="meta">Sep 2024 – Dec 2025<span>Omaha, NE</span></p><div><h3>Student Researcher</h3><p class="organization">University of Nebraska at Omaha · Department of Biomechanics</p><p>Fabricated and customized 3D-printed prosthetic devices, researched lower-limb prosthetic socket liners, and collaborated with patients on personalized prosthetic solutions.</p></div></article>
+    </div>
+  </section>
+
+  <section id="involvement" class="page wrap" aria-labelledby="involvement-title">
+    <header class="page-heading"><h2 id="involvement-title">Involvements &amp; Achievements</h2></header>
+    <div class="project-grid">
+      <section class="card" aria-labelledby="awards">
+        <h3 id="awards">Academic honors</h3>
+        <ul class="record-list">
+          <li><strong>NYU Merit Scholarship</strong><span>January 2026</span></li>
+          <li><strong>Cum laude, University of Nebraska at Omaha</strong><span>December 2025</span></li>
+          <li><strong>FUSE Grant recipient</strong><span>November 2024</span></li>
+        </ul>
+      </section>
+      <section class="card" aria-labelledby="activities">
+        <h3 id="activities">Student involvement</h3>
+        <ul class="record-list">
+          <li><strong>Biomechanics United Club</strong><span>Social Media Manager · May – Dec 2025</span></li>
+          <li><strong>Today’s Leader</strong><span>Social Media Manager · Oct 2023 – Mar 2024</span></li>
+        </ul>
+      </section>
+    </div>
+  </section>
 </main>
-<footer class="wrap footer"><span>Gabrielle Diaz · Biomedical Engineering</span><a href="#top">Back to top ↑</a></footer>
+<footer class="site-footer"><div class="wrap footer-inner"><span>Gabrielle Diaz · Biomedical Engineering</span><a href="https://www.linkedin.com/in/gabrielle-diaz-2136762b">LinkedIn ↗</a></div></footer>
 </body>
 </html>
