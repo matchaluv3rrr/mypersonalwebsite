@@ -30,17 +30,18 @@ function animateIntroduction() {
 
   const animatedCopy = document.createElement("span");
   animatedCopy.setAttribute("aria-hidden", "true");
-  const letters = Array.from(text, (letter, index) => {
-    if (/\s/.test(letter)) return letter;
-
-    const span = document.createElement("span");
-    span.textContent = letter;
-    span.className = "intro-letter";
-    span.style.animationDelay = index * 15 + "ms";
-    return span;
-  });
-  animatedCopy.replaceChildren(...letters);
   introduction.replaceChildren(accessibleCopy, animatedCopy);
+  const letters = Array.from(text);
+  let count = 0;
+  const timer = window.setInterval(() => {
+    count = Math.min(count + 2, letters.length);
+    animatedCopy.textContent = letters.slice(0, count).join("");
+    if (count === letters.length) window.clearInterval(timer);
+  }, 20);
+  window.setTimeout(() => {
+    window.clearInterval(timer);
+    animatedCopy.textContent = text;
+  }, 4000);
 }
 
 if (!pages[0].hidden && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
